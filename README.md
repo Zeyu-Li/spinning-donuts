@@ -1,4 +1,4 @@
-# Donut! 🍩
+# Donuts! 🍩
 
 Donuts for all your donut needs!
 

@@ -10,7 +10,7 @@ local a, ba, Main_str, z, b
 a = 0
 ba = 0
 
-Main_str = {'.','-','~',':','=','!','*','#','$','@'}
+Main_str = {'.',',','-','~',':',';','=','!','*','#','$','@'}
 
 -- clear screen before starting
 os.execute("cls")
@@ -56,7 +56,7 @@ while 1 do
             o = math.floor(x + (80 * y))
             N = math.floor(8 * ((f * e - c * d * g) * m - c * d * e - f * g - l * d * n))
 
-            if 22>y and y>0 and x>0 and 80>x and D>z[o+1] then
+            if 22>y and y>0 and 80>x and x>0 and D>z[o+1] then
                 z[o+1] = D
                 if N>0 then
                     b[o+1] = Main_str[N+1]
