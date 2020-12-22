@@ -5,11 +5,9 @@ double sin() ,cos();
 main(){
     float a=0, b=0, i, j, z[1760];
     char screen[1760];
-    int te=1;
-    int count;
     printf("\x1b[2J");
-    while(1) {
-        // memset(b,32,1760);
+    while (1) {
+        // init arrays
         for (int la=0;la<1760;la++) {
             z[la] = 0;
         }
@@ -18,7 +16,6 @@ main(){
         }
         for(j=0; 6.28>j; j+=0.07) {
             for(i=0; 6.28 >i; i+=0.02) {
-                count++;
                 float sini=sin(i),
                       cosj=cos(j),
                       sinA=sin(a),
@@ -43,7 +40,6 @@ main(){
                         screen[o] = ".,-~:;=!*#$@"[N];
                     } else {
                         screen[o] = '.';
-
                     }
                 }
             }

@@ -18,14 +18,14 @@ os.execute("cls")
 z = {}
 b = {}
 
--- zeros arrays
-for l=1, 1760 do
-    z[l] = 0
-end
 
-for tmp1=0,1 do
+while 1 do
     local i,j
     j=0
+    -- zeros arrays
+    for l=1, 1760 do
+        z[l] = 0
+    end
     for t=1, 1760 do
         b[t] = ' '
     end
@@ -68,7 +68,7 @@ for tmp1=0,1 do
     end
 
     -- print
-    -- os.execute("cls")
+    os.execute("cls")
     for l=1,1760 do
         if l%80 ~= 0 then
             io.write(tostring(b[l]))
@@ -76,6 +76,10 @@ for tmp1=0,1 do
             print()
         end
     end
+    
+    -- increments
+    a=a+0.04
+    ba=ba+0.02
 end
 
 -- tests

@@ -15,8 +15,6 @@ def main():
         z = [0 for _ in range(7040)]
         screen = [' ' for _ in range(1760)]
 
-        count = 0
-
         j=0
         while j<6.28:
             j+=0.07
